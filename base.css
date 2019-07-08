@@ -1,0 +1,93 @@
+body {
+  background: #000000	;
+
+  overflow: hidden;
+  margin: 10;
+  padding: 10;
+/*  width:100%;
+  height:100%;*/
+  overflow: scroll;
+ }
+
+ .parent{
+  width:100%;
+  height:100%;
+ }
+
+ #canvas{
+  position:absolute;
+  /*float:center;*/
+  width:100%;
+  height:100%;
+  bottom: 20%;
+  left:1000px;
+
+ }
+
+ #svg{
+  position:absolute;
+  width:512px;
+  height:512px;
+  border:1px solid green;
+ }
+
+ #neurons{
+ position: absolute;
+    top: 20%;
+    /*left: 1000px;*/
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    background: black;
+    opacity: 0.9;
+    padding: 10px;
+    width: 320px;
+    height: 320px;
+    float:right;
+    border-radius: 25px
+ }
+
+.p{
+	color: white;
+}
+
+ #slider{
+  -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 25%; /* Full-width */
+    height: 8px; /* Specified height */
+    background: #4F34B8; /*#d3d3d3; /* Grey background */
+    outline: #4F34B8; /* Remove outline */
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin-top: 30;
+   }
+
+ #slider2{
+  -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 25%; /* Full-width */
+    height: 8px; /* Specified height */
+    background: #4F34B8; /*#d3d3d3; /* Grey background */
+    outline: #4F34B8; /* Remove outline */
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    float:right;
+    margin-top: 30;
+   }
+
+  .hidden { display: none; }
+
+ #button{
+ 	padding-right: 2.0em;
+ 	float: center-right;
+ }
+
+/*   #canvas {
+             background-color: #FFF;
+             width: 100%;
+             height:100%;
+             border: 1px solid black;
+              }*/
