@@ -1,0 +1,267 @@
+body { 
+	margin: 0; 
+    background: #1c1717;
+    /*background: #eeeeee;*/
+    width: 100%;
+	height: 150%;
+     /*#d3d3d3; /* Grey background */
+	/*color: black;*/
+  /*border:none;*/
+}
+
+.label{
+  width: 150px;
+  height: 20px;
+  color:white;
+}
+
+.button{
+  /*border-radius: 3px;*/
+  background-color: lightgrey;
+  /*stroke:white;*/
+  /*stroke-width:0.2px;*/
+  color: black;
+  opacity: 0.7;
+  border:none;
+
+}
+
+.button2{
+  padding: 3px 24px;
+  /*border-radius: 3px;*/
+  /*stroke:white;*/
+  opacity: 0.7;
+  border:none;
+}
+
+
+#scene { width: 100%; height: 50%;
+}
+/*}*/
+
+.lineDiv
+    {
+        
+        border-left:1px solid grey;
+        height: 50%;
+		/* width:100%; */
+    }
+
+.canvasDiv {
+  /*height: 500px;*/
+  border-left:1px solid grey;
+  /*border-radius: 25px;*/
+}
+
+/*.particleDiv {
+  border-right:1px solid white;
+  /*border-radius: 25px;*/
+/*}*/
+
+.h2{
+  color:white;
+
+}
+
+.p{
+  color:white; 
+  /*float:center; */
+  font-size:12px;
+  background-color: #8B008B;
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  /*padding-top: 10px;*/
+}
+
+
+
+.p6{
+  color:white; 
+  /*float:center; */
+  font-size:16px;
+  background-color: #8B008B;
+  border: 1px solid white;
+  margin-top: 30px;
+  border-radius: 5px;
+  margin-right: 15px;
+  /*padding-top: 10px;*/
+}
+
+
+
+.p1{
+  width: 25%;
+  color:white; 
+  /*float:center; */
+  font-size:12px;
+  background-color: #8B008B;
+  border: 1px solid white;
+  border-radius: 5px;
+  float:center;
+  padding-left: 150px;
+  margin-left: 20px;
+}
+
+.p3{
+  width: 25%;
+  color:white; 
+  /*float:center; */
+  font-size:12px;
+  background-color: #8B008B;
+  border: 1px solid grey;
+  border-radius: 5px;
+  float:center;
+  padding-left: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+.p4{
+  width: 13%;
+  color:lightgrey; 
+  /*float:center; */
+  font-size:16px;
+  font-weight:bold;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  float:center;
+  padding-left: 1.5%;
+  margin-left: 60%;
+  margin-top: 10px;
+}
+
+#Filter{
+  width: 25%;
+  color:white; 
+  /*float:center; */
+  font-size:12px;
+  background-color: #8B008B;
+  border: none;
+  border-radius: 5px;
+  float:center;
+  padding-left: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+  opacity:0.7;
+}
+
+#Reset{
+  width: 25%;
+  color:white; 
+  /*float:center; */
+  font-size:12px;
+  background-color: #8B008B;
+  border: 1px solid grey;
+  border-radius: 5px;
+  float:center;
+  padding-left: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+ #slider{
+  -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 25%; /* Full-width */
+    height: 8px; /* Specified height */
+    background: #8B008B; /*#d3d3d3; /* Grey background */
+    outline: #8B008B; /* Remove outline */
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin-bottom: 20px;
+    /*padding-left: 20px;*/
+    margin-left: 20px
+    /*float:right;*/
+   }
+
+  #canvas{
+  	float:right;
+  	background:#808080;
+  	width: 50%;
+  	height: 50%;
+  }
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: white;
+}
+a:hover {
+    color: red;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.axisRed line{
+  stroke: white;
+}
+
+.axisRed path{
+  stroke: white;
+}
+
+.axisRed text{
+  fill: white;
+}  
+
+.line {
+  fill: none;
+  /*stroke: steelblue;*/
+  stroke: #00FFFF;
+  stroke-width: 1px;
+}
+
+div.tooltiplinegraph { 
+    position: absolute;     
+    text-align: center;     
+    width: 30px;          
+    height: 20px;         
+    /*padding: 2px;       */
+    font: 16px sans-serif;    
+    /*background: grey; */
+    border-radius: 4px;
+    /*opacity:0.7;*/
+    /*border: 1px solid white;    */
+    /*border-radius: 8px;     */
+    pointer-events: visibleFill;  
+    /*color: #8B008B;*/
+    color:#00FF00;
+    /*color: #a51965;*/
+    /*cursor:crosshair;*/
+}
+
+div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 30px;          
+    height: 20px;         
+    /*padding: 2px;       */
+    font: 16px sans-serif;    
+    /*background: grey; */
+    border-radius: 4px;
+    /*opacity:0.7;*/
+    /*border: 1px solid white;    */
+    /*border-radius: 8px;     */
+    pointer-events: visibleFill;  
+    /*color: #8B008B;*/
+    color:#00FF00;
+    /*color: #a51965;*/
+    /*cursor:crosshair;*/
+}
+
+.click{
+  pointer-events: all;
+  
+}
+
+
+
+

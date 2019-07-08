@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <!-- <meta content="utf-8" http-equiv="encoding"> -->
+
+    <title>Brain Networks Vis</title>
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- JS Libraries -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="lib/js/three.js"></script>
+    <script src="lib/js/DragControls.js"></script>
+    <script src="lib/js/OrbitControls.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.6/d3.min.js"></script> -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+   
+
+
+    <!-- JS Source -->
+    <script src="./src/js/scene.js"></script>
+    <script src="./src/js/particleSystem.js"></script>
+    <script src="./src/js/d3canvas.js"></script>
+    <script src="./src/js/linechart1.js"></script>
+    
+    <!-- <script src="./src/js/vertexshader.js" id="vertexshader"></script>
+    <script src="./src/js/fragmentsahder.js" id="fragmentshader"></script> -->
+
+
+    <script src="./src/js/main.js"></script>
+
+
+
+</head>
+
+<body onload="App.start();">
+    <!-- <body> -->
+    <!-- <div id="parent">
+            </div>
+    -->
+    
+    <div class="col-md-9"><p class="p4" style="float:center"> V-NeuroStack </p></div>
+    <div class="col-md-3"><a href="Credits.html" class="p3" style="float: right; visibility:hidden">Credits</a></div>
+    <!-- </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="particleDiv col-md-6">
+                <div id="scene">
+                    <!-- <center><p class="p"> 3D View </p></center> -->
+                    <button type="button" class="button" id="comm0">comm0</button> &nbsp; 
+                    <button type="button" class="button" id="comm1">comm1</button> &nbsp; 
+                    <button type="button" class="button" id="comm2">comm2</button> &nbsp; 
+                    <button type="button" class="button" id="comm3">comm3</button>
+                    <br>
+                    <br>
+                    <button type="button" class="button2" id="red" style="background-color:red; color:white">8k - 9k</button>  <label class="label" id="rednumber">0</label> &nbsp; 
+                    <button type="button" class="button2" id="green" style="background-color:green; color:white">9k - 10k</button> <label class="label" id="greennumber">0</label> &nbsp;
+                    <button type="button" class="button2" id="blue" style="background-color:blue; color:white">10k - 11k</button>  <label class="label" id="bluenumber">0</label> &nbsp;
+                    <button type="button" class="button2" id="green" style="background-color:white; color:black">11k - 12k</button> <label class="label" id="whitenumber">0</label> &nbsp;
+                    <button type="button" class="button2" id="blue" style="background-color:cyan; color:black">12k - 15k</button>  <label class="label" id="cyannumber">0</label> &nbsp;
+                    <button type="button" class="button2" id="all" style="background-color:white; color:black">All</button> <label class="label" id="allnumber">0</label>
+                    <br>
+                    <br>
+
+                    <p id="Filter" style="color:white; left-padding:20px"> Filter </p> 
+                    <input type="range" min="-4.9" max="4.9" value="0" step="0.01" id="slider"  style="position:relative;">
+                <!--     </div> -->
+                </div>
+                
+            </div>
+            
+            <div class="col-md-6">
+                <!-- <center><p class="p"> 2D View </p>   -->
+                    <!-- <br> -->
+                    <!-- <br> -->
+                    <br>
+                    <div class="lineDiv"><p class="p4" id="cellname" style="width:12%; float:right; font-weight:normal; margin-right:15%"> Cell 1 </p></div> 
+
+                    <br>
+                <div class="canvasDiv"></div>         
+                  
+            </div>
+            
+            
+         </div>
+    </div>
+
+    <!-- <div class="col-md-5"><p id="Filter" style="color:white; left-padding:20px"> Filter </p> 
+            <input type="range" min="-4.9" max="4.9" value="0" step="0.01" id="slider"  style="position:relative;">
+        </div> -->
+        <!-- <div class="col-md-6"><button id="Reset" style="margin-left:16px">Color Reset</button></div> -->
+
+    <!-- <div class="row">
+    <div class="col-md-9">
+                <div class="lineDiv"></div>            
+            </div>
+    </div> -->
+	
+	
+	
+        
+</body>
+</html>
