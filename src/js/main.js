@@ -23,7 +23,8 @@ var App = App || {};
         // initialize the particle system
         var particleSystem = new ParticleSystem();
        // particleSystem.initialize('data/014_new.csv', "comm0");
-       particleSystem.initialize('data/014_new.csv', "filtered");
+       // particleSystem.initialize('data/014_new.csv', "filtered");
+        particleSystem.initialize('data/014_new.csv', "intensity");
 
 
         //add the particle system to the scene
