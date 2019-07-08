@@ -337,34 +337,34 @@ var ParticleSystem = function() {
 
             //for raw intensities
 
-      		// var color_cz = d3.scaleLinear()
-        //       .domain([4715, 14015])
-        //       .range([0.0, 1.0]);
+      		var color_cz = d3.scaleLinear()
+              .domain([4715, 14015])
+              .range([0.0, 1.0]);
 
         	//for filtered intensities
-        	var color_cz = d3.scaleLinear()
-              .domain([-4, 68])
-              .range([0.0, 1.0]);
+        	// var color_cz = d3.scaleLinear()
+         //      .domain([-4, 68])
+         //      .range([0.0, 1.0]);
 
             // console.log("cz_raw = " + cz);
             // console.log("cz_filtered = " + typeof(data[i].concentration));
 
-            var cz_val = color_cz(data[i].concentration) * 10;
+            // var cz_val = color_cz(data[i].concentration) * 10;
 
-            // var cz_val = color_cz(data[i].concentration);
+            var cz_val = color_cz(data[i].concentration);
 
             var cx = 0.0;
             var cy = 0.5;
-            // var cz = cz_val;
-            if(cz_val < 0){
-            	// cx = cz_val * -1;
-            	console.log("cx = " + cx);
-            	cz = 0.0;
-            }
-            else{
-            	// var cx = 0.0;
-            	var cz = cz_val;
-            }
+            var cz = cz_val;
+            // if(cz_val < 0){
+            // 	// cx = cz_val * -1;
+            // 	console.log("cx = " + cx);
+            // 	cz = 0.0;
+            // }
+            // else{
+            // 	// var cx = 0.0;
+            // 	var cz = cz_val;
+            // }
             
             // console.log("cz_filtered_val = " + cz);
 
